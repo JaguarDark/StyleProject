@@ -1,0 +1,122 @@
+/* ========================================================================================================================================================= */
+/* ========================================================================================================================================================= */
+.wrapper { /* стандартный шаблон всех сайтов */
+  min-height: 100%; /* растягиваем контент по высоте на ширену боди, даже когда в нем нет контента */
+  width: 100%  ;
+  overflow: hidden; /* если ширина контента привышает ширину viewport то она обрезается (чтоб ограничить контент по ширине и убрать нижни скролл) */
+}
+html,
+body {
+  font-family: 'Cormorant Garamond', serif;
+  font-family: 'EB Garamond', serif;
+  /* font-size: 20px; */
+  font-weight: 400;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* ========================================================================================================================================================= */
+/* ====================================================================HEADER=============================================================================== */
+.container { /* стандартный шаблон всех сайтов */
+  max-width: 1260px;
+  padding: 0 15px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+
+.header {
+  background: url('../image/photo/backgraund.jpg') center; /* центрирруем изображение */
+  background-size: cover; /* растягиваем */
+}
+
+.header__line {
+  content: "";
+  width: 1226px;
+  height: 1px;
+  background-color: #fff;
+  
+}
+.header__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.header__menu-list {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.header__list-inst {
+  margin-right: 35px;
+}
+.header__list {
+  font-family: 'Cormorant Garamond', serif;
+  font-family: 'EB Garamond', serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 130%;
+  text-decoration: underline;
+  color: #FFFFFF;
+  margin-right: 10px;
+  transition: all .3s;
+}
+
+.header__list:hover {
+  text-shadow: 0 0 20px #fefcc9, 10px -10px 30px #feec85, -20px -20px 40px #ffae34, 20px -40px 50px #ec760c, -20px -60px 60px #cd4606, 0 -80px 70px #973716, 10px -90px 80px #451b0e;
+}
+
+.header__list:nth-child(5) {
+  margin: 0 30px 0 30px;
+}
+
+
+
+.header__title {
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 120%;
+  text-align: center;
+  color: #FFFFFF;
+  margin: 260px 0 290px 0;
+}
+.header__foot {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 140%;
+  color: #FFFFFF;
+  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: all .3s;
+}
+
+.header__foot:hover {
+  text-shadow:20px 20px 20px #030303;
+  color: bisque;
+
+}
+.header__indent {
+  padding-bottom: 100px;
+  width: 225px;
+  text-align: center;
+  display: block;
+}
+.header__foot::before {
+content: "";
+background: url('../image/logo/skrolldown.svg');
+width: 20px;
+height: 30px;
+display: block;
+margin-left: -40px;
+margin-bottom: -28px;
+}
+
+  /* ====================================================================HEADER=============================================================================== */
+  /* ====================================================================SERVICES============================================================================= */
+
