@@ -19,7 +19,7 @@ body {
 /* ========================================================================================================================================================= */
 /* ====================================================================HEADER=============================================================================== */
 .container { /* стандартный шаблон всех сайтов */
-  max-width: 1260px;
+  max-width: 1350px;
   padding: 0 15px;
   margin: 0 auto;
   height: 100%;
@@ -36,7 +36,6 @@ body {
   width: 1226px;
   height: 1px;
   background-color: #fff;
-  
 }
 .header__wrapper {
   display: flex;
@@ -52,8 +51,32 @@ body {
 }
 
 .header__list-inst {
+  content: "";
+  width: 26px;
+  height: 26px;
+  background: url('../image/logocomany/insta.svg');
+  border-color: #fff;
   margin-right: 35px;
+  display: block;
+  transition: all .3s;
 }
+
+.header__list-inst:hover {
+  opacity: 0.4;
+}
+
+.header__logo-company {
+  content: "";
+  background: url('../image/logocomany/mylogo.svg');
+  width: 40px;
+  height: 40px;
+  display: block;
+  transition: all .3s;
+}
+.header__logo-company:hover {
+  opacity: 0.4;
+}
+
 .header__list {
   font-family: 'Cormorant Garamond', serif;
   font-family: 'EB Garamond', serif;
@@ -68,13 +91,12 @@ body {
 
 .header__list:hover {
   text-shadow: 0 0 20px #fefcc9, 10px -10px 30px #feec85, -20px -20px 40px #ffae34, 20px -40px 50px #ec760c, -20px -60px 60px #cd4606, 0 -80px 70px #973716, 10px -90px 80px #451b0e;
+  color: #CDAA7D;
 }
 
 .header__list:nth-child(5) {
   margin: 0 30px 0 30px;
 }
-
-
 
 .header__title {
   font-weight: 700;
@@ -115,8 +137,283 @@ height: 30px;
 display: block;
 margin-left: -40px;
 margin-bottom: -28px;
+transition: all 1s;
+}
+.header__foot:hover::before{
+  transform: rotateZ(180deg);
 }
 
   /* ====================================================================HEADER=============================================================================== */
   /* ====================================================================SERVICES============================================================================= */
 
+  .service {
+    background: #111111;
+    z-index: 0;
+  }
+  .service__alert {
+    margin-top: 120px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    }
+  .service__text {
+    font-family: 'Garamond';
+    font-style: normal; 
+    padding-top: 244px;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 130%;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 115px;
+  }
+  .service__photos {
+    display: grid;
+    grid-template: repeat(2, auto)/repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 100px;
+  }
+
+  .service__photo {
+    color: #FFFFFF;
+    z-index: 1;
+    margin-bottom: 50px;
+  }
+  
+
+  .service__squad {
+    width: 396px;
+    height: 300px;
+    border: 1px solid #CDAA7D;
+    position: absolute;
+    
+    transform: translate(5%, -105%);
+    z-index: -1;
+  }
+
+  .service__photo span {
+    font-family: 'Garamond';
+    font-style: normal; 
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 120%;
+    display: block;
+    margin-top: 30px;
+  }
+
+  .service__logos-company {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 100px;
+    width: 1096px;
+    margin: 0 auto; /* способ выравнивания по центру */
+  }
+
+  /* ====================================================================SERVICES=============================================================================== */
+  /* ====================================================================OURWORKS============================================================================= */
+
+  .ourworks {
+    background: #111111;
+  }
+  .container {
+  }
+  .ourworks__header {
+    font-family: 'Garamond';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 120%;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 80px;
+  }
+  .ourworks__menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-left: 50% ;
+    transform: translateX(-50%);
+  }
+  .ourworks__item {
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 130%;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  .ourworks__item-btn {
+    transition: all .3s;
+  }
+  .ourworks__item:last-child {
+    margin-right: 0px;
+  }
+  .ourworks__item-btn:hover {
+    color: #CDAA7D;
+    text-decoration: underline;
+  }
+  .ourworks__item-btn--active {
+    text-shadow: 0 0 20px #fefcc9, 10px -10px 30px #feec85, -20px -20px 40px #ffae34, 20px -40px 50px #ec760c, -20px -60px 60px #cd4606, 0 -80px 70px #973716, 10px -90px 80px #451b0e;
+    color: #CDAA7D;
+    text-decoration: underline;
+    border: none;
+    padding: 0px 0px;
+  }
+  .ourworks__works {
+    display: grid;
+    grid-template: repeat(2, 1fr)/repeat(3, 1fr);
+    padding-bottom: 70px;
+  }
+  .ourworks__work-work {
+    margin-bottom: 20px;
+    margin-right: 20px;
+    transition: all .3s;
+  }
+  .ourworks__work-work:last-child,:nth-child(3),:nth-child(6){
+    margin-right: 0px;
+    
+  }
+
+
+
+/*   .ourworks__work-work:hover {
+    border: 1px solid #000000;
+  }
+  .ourworks__work-work:last-child :hover {
+    border: 1px solid #000000;
+  }
+
+  .ourworks__work-work:last-child :hover {
+    border: 1px solid #ff0000;
+  } */
+  .ourworks__work-work {
+    overflow: hidden;
+  }
+  
+   /* ====================================================================OURWORKS=============================================================================== */
+  /* =====================================================================FOOTER============================================================================= */
+
+  .footer {
+    background: #111111;
+  }
+  .line {
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+  }
+  .line:first-child {
+    margin-bottom: 70px;
+  }
+  .container {
+  }
+  .header__line {
+  }
+  .footer__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 70px;
+  }
+  .footer__contacts-items {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__contacts-item {
+    font-family: 'Garamond';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+  }
+  .footer__contact-item a:hover {
+    color: #888;
+  }
+  .footer__contact-item {
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+  }
+  .footer__works-items {
+  }
+  .footer__work-items {
+    font-family: 'Garamond';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+  }
+
+  .footer__works-item {
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+  }
+  .footer__works-item a:hover {
+    color: #888;
+  }
+  .footer__insta {
+    font-family: 'Garamond';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+  }
+  .footer__inst {
+    content:"";
+    background: url('../image/logo/insta_last.svg');
+    width: 38px;
+    height: 38px;
+    display: block;
+  }
+  .footer__inst:hover {
+    opacity: 0.2;
+  }
+
+  .footer__copyright {
+    color: rgba(255, 255, 255, 0.668)255, 255, 255, 0.35;
+    padding: 50px 50px ;
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 140%;
+    text-align: center;
+    color: #FFFFFF;
+    opacity: 0.5;
+  }
+
+
+
+/*   .ourworks__works {
+    margin: 0;
+  } */
+
+  .ourworks__work-work {
+    max-width: 416px;
+  }
+  .ourworks__works {
+    margin: 0;
+    max-width: 1296px;
+    max-height: 1296px;
+    
+  }
+  .ourworks__work-work {
+    
+  }
